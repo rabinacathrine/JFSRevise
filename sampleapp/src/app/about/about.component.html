@@ -1,0 +1,49 @@
+<p>about works!</p>
+
+<!-- <form [formGroup]="profileForm"  (ngSubmit)="onSubmit()">
+<label for="name">UserName: </label>
+<input id="name" type="text" formControlName="username">
+<label for="name">Password: </label>
+<input id="name" type="text" formControlName="password">
+
+<label for="mail">EMail: </label>
+<input id="mail" type="text" formControlName="email">
+
+<p>Complete the form to enable button.</p>
+<button type="submit">Submit</button>
+</form>
+{{profileForm.status}} -->
+
+
+<!-- <button type="button" (click)="updateName()">Update Name</button> -->
+<!-- {{name.value}} -->
+
+
+
+<div>
+    <h1>User Registration</h1>
+    <form #login="ngForm" (ngSubmit)="onSubmit()">
+        <!-- <div class="form-group">
+            <label for="id">id</label>
+            <input type="text" name="id" class="form-control" [(ngModel)]="users.id">
+        </div> -->
+        <div class="form-group">
+            <label for="username">Fname</label>
+            <input type="text" name="username" class="form-control"  [(ngModel)]="users.username">
+        </div>
+        <pre></pre>
+        <div class="form-group">
+            <label for="password">password</label>
+            <input type="text" name="password" class="form-control"  [(ngModel)]="users.password">
+        </div>
+        <pre></pre>
+        <div class="form-group">
+            <label for="email">Email</label>
+            <input type="text" name="email" class="form-control"  [(ngModel)]="users.email">
+        </div>
+        <pre></pre>
+        <button type="submit">Submit</button>
+    </form>
+
+  
+</div>
